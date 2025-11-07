@@ -84,6 +84,7 @@
 		"extIcon": "https://raw.githubusercontent.com/unltdnetworx/ioBroker.pi-hole/master/admin/pi-hole.png",
 		"readme": "https://github.com/unltdnetworx/ioBroker.pi-hole/blob/master/README.md",
 		"loglevel": "info",
+		"tier": 2,
 		"mode": "daemon",
 		"type": "network",
 		"compact": true,
