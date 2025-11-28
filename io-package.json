@@ -77,7 +77,10 @@
 			"pi-hole",
 			"ad-filter"
 		],
-		"license": "MIT",
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
 		"platform": "Javascript/Node.js",
 		"main": "main.js",
 		"icon": "pi-hole.png",
@@ -85,6 +88,7 @@
 		"extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.pi-hole/master/admin/pi-hole.png",
 		"readme": "https://github.com/iobroker-community-adapters/ioBroker.pi-hole/blob/master/README.md",
 		"loglevel": "info",
+		"tier": 2,
 		"mode": "daemon",
 		"type": "network",
 		"compact": true,
