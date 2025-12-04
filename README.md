@@ -12,9 +12,10 @@
 
 This adapter is a ment to read values from a running pi-hole and control the device (start/stop).
 
-USE AT YOUR OWN RISK!!! ABSOLUTELY NO WARRANTY FOR DAMAGES, ETC.!!!
+**IMPORTANT:**  
+This adapter works with pi-hole release < 6.0.0 only. Please use adpater [ioBroker.pi-hole](https://github.com/oweitman/ioBroker.pi-hole2) for poi-hole release 6 and newer.
 
-Help or hints are welcome.
+This adapter will only get very limited maintainance as pi-hole 5 and earlier ies EOL.
 
 ## Steps
 
@@ -30,7 +31,21 @@ Help or hints are welcome.
 
 * running pi-hole device
 
+## Credits
+
+This adapter would not have been possible without the great work of Michael Schuster <development@unltd-networx.de>, who created previous releases of this adapter.
+
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
+
 ## Changelog
+
+### 2.0.0 (2025-11-28)
+* (mcm1957) Adapter has been migrated to iobroker-community-adapters organisation
+* (mcm1957) Adapter requires node.js >= 20, js-controller >= 6.0.11 and admin >= 7.6.17 now
+* (mcm1957) Dependencies have been updated
 
 ### 1.3.6
 
@@ -105,6 +120,7 @@ Kaffee spendieren/serve a coffee
 
 MIT License
 
+Copyright (c) 2025 iobroker-community-adapters <iobroker-community-adapters@gmx.de>  
 Copyright (c) 2023 Michael Schuster
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
