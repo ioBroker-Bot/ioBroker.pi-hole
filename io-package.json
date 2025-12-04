@@ -1,135 +1,131 @@
 {
-	"common": {
-		"name": "pi-hole",
-		"version": "1.3.6",
-		"news": {
-			"1.3.6": {
-                "en": "support for controller v5 added",
-                "de": "Unterstützung für Controller v5 hinzugefügt"
-            },
-			"1.3.4": {
-                "en": "disabled 'getQueryTypes' for creating lots of spam entries",
-                "de": "'getQueryTypes' deaktiviert, da sehr viele unnötige Datenpunkte erstellt wurden"
-            },
-			"1.3.2": {
-                "en": "ready for Admin 5 and NodeJS 16",
-                "de": "Anpassungen für Admin 5 and NodeJS 16"
-            },
-			"1.3.1": {
-                "en": "new adapter testing and security update",
-                "de": "neue Version von Adapter testing und Sicherheits-Updates"
-            },
-			"1.3.0": {
-				"en": "info for versions and updates added, updatePiholeAvailable removed",
-				"de": "Infos über Versionen und Updates hinzugefügt, updatePiholeAvailable entfernt"
-			},
-			"1.2.3": {
-				"en": "bugfix for numbers with comma",
-				"de": "Fehlerbehebung für Zahlen mit Komma"
-			},
-			"1.2.2": {
-				"en": "bugfix for objecttypes",
-				"de": "Fehlerbehebung für Objekttypen"
-			},
-			"1.2.1": {
-				"en": "bugfix for update notification",
-				"de": "Fehlerbehebung für Update-Benachrichtigung"
-			},
-			"1.2.0": {
-				"en": "datapoint for available update",
-				"de": "Datenpunkt für verfügbare Updates"
-			},
-			"1.1.0": {
-				"en": "support for ssl-connection",
-				"de": "Ünterstützung von SSL-Verbindungen"
-			}
-		},
-		"titleLang": {
-			"en": "pi-hole",
-			"de": "Pi-hole",
-			"ru": "пи-дыра",
-			"pt": "pi-hole",
-			"nl": "pi-hole",
-			"fr": "pi-trou",
-			"it": "pi-hole",
-			"es": "agujero pi",
-			"pl": "pi-hole",
-			"zh-cn": "PI-孔"
-		},
-		"desc": {
-			"en": "manage a pi-hole installation",
-			"de": "Verwalten einer Pi-Hole-Installation",
-			"ru": "управлять установкой",
-			"pt": "gerenciar uma instalação pi-hole",
-			"nl": "een pi-hole-installatie beheren",
-			"fr": "gérer une installation de pi-trous",
-			"it": "gestire un'installazione pi-hole",
-			"es": "administrar una instalación de agujero pi",
-			"pl": "zarządzaj instalacją pi-hole",
-			"zh-cn": "管理一个pi-hole安装"
-		},
-		"authors": [
-			"Michael Schuster <development@unltd-networx.de>",
-			"iobroker-community-adapters <iobroker-community-adapters@gmx.de>",
-			"mcm1957 <mcm57@gmx.at>"
-		],
-		"keywords": [
-			"pi-hole",
-			"ad-filter"
-		],
-		"licenseInformation": {
-			"type": "free",
-			"license": "MIT"
-		},
-		"platform": "Javascript/Node.js",
-		"icon": "pi-hole.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.pi-hole/master/admin/pi-hole.png",
-		"readme": "https://github.com/iobroker-community-adapters/ioBroker.pi-hole/blob/master/README.md",
-		"loglevel": "info",
-		"tier": 2,
-		"mode": "daemon",
-		"type": "network",
-		"compact": true,
-		"materialize": true,
-		"supportCustoms": false,
-		"dataSource": "poll",
-		"connectionType": "local",
-		"dependencies": [
-			{
-				"js-controller": ">=6.0.11"
-			}
-		],
-		"globalDependencies": [
-			{
-				"admin": ">=7.6.17"
-			}
-		]
-	},
-    "native": {
+  "common": {
+    "name": "pi-hole",
+    "version": "2.0.0",
+    "news": {
+      "2.0.0": {
+        "en": "Adapter has been migrated to iobroker-community-adapters organisation\nAdapter requires node.js >= 20, js-controller >= 6.0.11 and admin >= 7.6.17 now\nDependencies have been updated",
+        "de": "Adapter wurde zur iobroker-community-adapters Organisation migriert\nAdapter benötigt node.js >= 20, js-controller >= 6.0.11 und admin >= 7.6.17 jetzt\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер был перенесен в организацию адаптации сообщества йоброкеров\nАдаптер требует node.js >= 20, js-контроллер >= 6.0.11 и админ >= 7.6.17 сейчас\nЗависимости были обновлены",
+        "pt": "Adaptador foi migrado para iobroker-community-adaptadores organização\nO adaptador necessita de nodo.js >= 20, js-controlador >= 6.0.11 e administrador >= 7.6.17 agora\nAs dependências foram atualizadas",
+        "nl": "Adapter is gemigreerd naar iobroker-community-adapters organisatie\nVoor adapters zijn node.js < 20, js-controller <= 6,0.11 en admin <= 7.6.17 nu vereist\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "L'adaptateur a été transféré vers l'organisation iobroker-community-adapters\nAdapter nécessite node.js >= 20, js-controller >= 6.0.11 et admin >= 7.6.17 maintenant\nLes dépendances ont été actualisées",
+        "it": "L'adattatore è stato migrato all'organizzazione di hobroker-community-adapters\nAdattatore richiede node.js >= 20, js-controller >= 6.0.11 e admin >= 7.6.17 ora\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador ha sido migrado a la organización de ibroker-community-adapters\nAdaptador requiere node.js ю= 20, js-controller √= 6.0.11 y admin= 7.6.17 ahora\nSe han actualizado las dependencias",
+        "pl": "Adapter został przeniesiony do organizacji adapterów społeczności iobrokerowej\nAdapter wymaga node.js > = 20, kontroler js- i admin > = 7.6.17\nZaktualizowano zależności",
+        "uk": "Перехідник мігрований до організації iobroker-community-adapters\nАдаптер вимагає node.js >= 20, js-controller >= 6.0.11 і admin >= 7.6.17 тепер\nЗалежність було оновлено",
+        "zh-cn": "适应者已迁移到职业经纪人-社区适应者组织\n适配器需要节点.js >= 20,js控制器 >= 6.0.11和admin >= 7.6.17 现在\n依赖关系已更新"
+      },
+      "1.3.6": {
+        "en": "support for controller v5 added",
+        "de": "Unterstützung für Controller v5 hinzugefügt"
+      },
+      "1.3.4": {
+        "en": "disabled 'getQueryTypes' for creating lots of spam entries",
+        "de": "'getQueryTypes' deaktiviert, da sehr viele unnötige Datenpunkte erstellt wurden"
+      },
+      "1.3.2": {
+        "en": "ready for Admin 5 and NodeJS 16",
+        "de": "Anpassungen für Admin 5 and NodeJS 16"
+      },
+      "1.3.1": {
+        "en": "new adapter testing and security update",
+        "de": "neue Version von Adapter testing und Sicherheits-Updates"
+      },
+      "1.3.0": {
+        "en": "info for versions and updates added, updatePiholeAvailable removed",
+        "de": "Infos über Versionen und Updates hinzugefügt, updatePiholeAvailable entfernt"
+      },
+      "1.2.3": {
+        "en": "bugfix for numbers with comma",
+        "de": "Fehlerbehebung für Zahlen mit Komma"
+      }
     },
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "info",
-			"type": "channel",
-			"common": {
-				"name": "Information"
-			},
-			"native": {}
-		},
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+    "titleLang": {
+      "en": "pi-hole",
+      "de": "Pi-hole",
+      "ru": "пи-дыра",
+      "pt": "pi-hole",
+      "nl": "pi-hole",
+      "fr": "pi-trou",
+      "it": "pi-hole",
+      "es": "agujero pi",
+      "pl": "pi-hole",
+      "zh-cn": "PI-孔"
+    },
+    "desc": {
+      "en": "manage a pi-hole installation",
+      "de": "Verwalten einer Pi-Hole-Installation",
+      "ru": "управлять установкой",
+      "pt": "gerenciar uma instalação pi-hole",
+      "nl": "een pi-hole-installatie beheren",
+      "fr": "gérer une installation de pi-trous",
+      "it": "gestire un'installazione pi-hole",
+      "es": "administrar una instalación de agujero pi",
+      "pl": "zarządzaj instalacją pi-hole",
+      "zh-cn": "管理一个pi-hole安装"
+    },
+    "authors": [
+      "Michael Schuster <development@unltd-networx.de>",
+      "iobroker-community-adapters <iobroker-community-adapters@gmx.de>",
+      "mcm1957 <mcm57@gmx.at>"
+    ],
+    "keywords": [
+      "pi-hole",
+      "ad-filter"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "pi-hole.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.pi-hole/master/admin/pi-hole.png",
+    "readme": "https://github.com/iobroker-community-adapters/ioBroker.pi-hole/blob/master/README.md",
+    "loglevel": "info",
+    "tier": 2,
+    "mode": "daemon",
+    "type": "network",
+    "compact": true,
+    "materialize": true,
+    "supportCustoms": false,
+    "dataSource": "poll",
+    "connectionType": "local",
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.17"
+      }
+    ]
+  },
+  "native": {},
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
